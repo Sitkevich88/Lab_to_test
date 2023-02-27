@@ -1,4 +1,4 @@
-package lab_4;
+package lab_4.characters.hemul;
 
 public enum HemulStatus{
     SCARED,

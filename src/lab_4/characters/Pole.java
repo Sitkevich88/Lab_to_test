@@ -1,4 +1,4 @@
-package lab_4;
+package lab_4.characters;
 
 
 public final class Pole /*extends NamedExistingObject*/ {
@@ -15,8 +15,6 @@ public final class Pole /*extends NamedExistingObject*/ {
 
     private final boolean dirty;
     private final boolean sticky;
-
-
 
     public static int getNumberOfObjects(){return numberOfObjects;}
     public boolean isDirty(){return dirty;}

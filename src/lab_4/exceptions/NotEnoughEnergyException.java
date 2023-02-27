@@ -1,7 +1,7 @@
-package lab_4;
+package lab_4.exceptions;
 
 public class NotEnoughEnergyException extends RuntimeException {
-    NotEnoughEnergyException(String text){
+    public NotEnoughEnergyException(String text){
         super(text);
     }
 }

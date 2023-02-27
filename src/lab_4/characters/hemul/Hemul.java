@@ -1,5 +1,16 @@
-package lab_4;
+package lab_4.characters.hemul;
 
+
+import lab_4.characters.Barometer;
+import lab_4.characters.Pole;
+import lab_4.characters.SunRay;
+import lab_4.characters.common.AbleToGiveEnergy;
+import lab_4.characters.common.SkirtStatus;
+import lab_4.characters.hatifnatt.HatifnattActions;
+import lab_4.enums.Adverbs;
+import lab_4.enums.Location;
+import lab_4.exceptions.ImpossibleNumberException;
+import lab_4.exceptions.NotEnoughEnergyException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -58,7 +69,6 @@ public class Hemul implements HemulActions {
         location = Location.BY_THE_POLE;
         new HemulMessages(this).crashInto(pole);
     }
-
 
     @Override
     public void see(HatifnattActions hatifnatt) {
@@ -179,17 +189,6 @@ public class Hemul implements HemulActions {
             energy--;
         }
 
-
-
-
-
-
-
-
-
-
-
-
         if (hemulStatus == HemulStatus.SCARED) {
             //new Fear().giveSuperHemulPower(this);
             AbleToGiveEnergy fear = new AbleToGiveEnergy() {
@@ -205,7 +204,7 @@ public class Hemul implements HemulActions {
             location = Location.ON_TOP_OF_THE_POLE;
             new HemulMessages(this).climb(pole);
         } else {
-            throw new NotEnoughEnergyException("Not enough energy to clinb!!!!");
+            throw new NotEnoughEnergyException("Not enough energy to climb!!!!");
         }
     }
 

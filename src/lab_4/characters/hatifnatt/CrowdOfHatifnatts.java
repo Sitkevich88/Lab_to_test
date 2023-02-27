@@ -1,4 +1,10 @@
-package lab_4;
+package lab_4.characters.hatifnatt;
+
+import lab_4.characters.hemul.Hemul;
+import lab_4.enums.Adverbs;
+import lab_4.enums.Location;
+import lab_4.enums.MovableStatus;
+import lab_4.exceptions.ImpossibleNumberException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +16,7 @@ public class CrowdOfHatifnatts implements CrowdOfHatifnattsActions {
     public static int getNumberOfHatifnatts(){return numberOfHatifnatts;}
     private HatifnattStatus hatifnattStatus;
 
-    public CrowdOfHatifnatts (Hatifnatt hatifnatt, int initialAmount)throws ImpossibleNumberException{
+    public CrowdOfHatifnatts (Hatifnatt hatifnatt, int initialAmount)throws ImpossibleNumberException {
         if (initialAmount<2){
             throw new ImpossibleNumberException(initialAmount + " hatifnatts isn't a crowd. It must be at least 2 of them.");
         }

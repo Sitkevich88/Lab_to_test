@@ -1,5 +1,10 @@
-package lab_4;
+package lab_4.characters;
 
+
+import lab_4.enums.Adverbs;
+import lab_4.enums.Colour;
+import lab_4.enums.Location;
+import lab_4.enums.Material;
 
 public class Barometer{
 

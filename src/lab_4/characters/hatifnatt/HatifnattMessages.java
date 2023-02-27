@@ -1,4 +1,10 @@
-package lab_4;
+package lab_4.characters.hatifnatt;
+
+import lab_4.enums.Adverbs;
+import lab_4.characters.hemul.Hemul;
+import lab_4.enums.Location;
+import lab_4.characters.common.Message;
+import lab_4.exceptions.ImpossibleNumberException;
 
 public class HatifnattMessages extends Message implements HatifnattActions {
 
@@ -14,7 +20,6 @@ public class HatifnattMessages extends Message implements HatifnattActions {
                 setBuffer(0);
             }
         }
-
 
         public static boolean repetitionAccepted() {
             return repetitionAcceptance;
@@ -36,7 +41,7 @@ public class HatifnattMessages extends Message implements HatifnattActions {
 
     public HatifnattMessages(Hatifnatt hatifnatt) throws ImpossibleNumberException {
         super(hatifnatt);
-        setCharacterName( MessagesHider.getBuffer()+"/"+CrowdOfHatifnatts.getNumberOfHatifnatts() + " " +getCharacterName()+"(s)");
+        setCharacterName( MessagesHider.getBuffer()+"/"+ CrowdOfHatifnatts.getNumberOfHatifnatts() + " " +getCharacterName()+"(s)");
     }
 
     public void approach(Object o){

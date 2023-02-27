@@ -1,6 +1,18 @@
 package lab_4;
 
 
+import lab_4.characters.Barometer;
+import lab_4.characters.Pole;
+import lab_4.characters.SunRay;
+import lab_4.characters.hatifnatt.CrowdOfHatifnatts;
+import lab_4.characters.hatifnatt.Hatifnatt;
+import lab_4.characters.hatifnatt.HatifnattStatus;
+import lab_4.characters.hemul.Hemul;
+import lab_4.enums.Adverbs;
+import lab_4.enums.Colour;
+import lab_4.enums.Location;
+import lab_4.enums.Material;
+import lab_4.exceptions.ImpossibleNumberException;
 
 public class Main{
     public static void main(String[] args) throws ImpossibleNumberException {

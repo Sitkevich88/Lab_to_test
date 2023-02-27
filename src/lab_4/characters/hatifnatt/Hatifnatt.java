@@ -1,4 +1,10 @@
-package lab_4;
+package lab_4.characters.hatifnatt;
+
+import lab_4.characters.hemul.Hemul;
+import lab_4.enums.Adverbs;
+import lab_4.enums.Location;
+import lab_4.enums.MovableStatus;
+import lab_4.exceptions.ImpossibleNumberException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,14 +18,12 @@ public class Hatifnatt implements HatifnattActions {
     private HatifnattStatus hatifnattStatus;
 
 
-
     {
         CrowdOfHatifnatts.incrementHatifnatts();
     }
 
 
-
-    public Hatifnatt(Location location, int numberOfPaws) throws ImpossibleNumberException{
+    public Hatifnatt(Location location, int numberOfPaws) throws ImpossibleNumberException {
         this.location = location;
         //hatifnattStatus = HatifnattStatus.LINE_AFTER_LINE;
         if (numberOfPaws<0){

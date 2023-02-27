@@ -1,4 +1,12 @@
-package lab_4;
+package lab_4.characters.hemul;
+
+import lab_4.characters.Barometer;
+import lab_4.characters.Pole;
+import lab_4.characters.SunRay;
+import lab_4.characters.common.Message;
+import lab_4.characters.hatifnatt.HatifnattActions;
+import lab_4.enums.Adverbs;
+import lab_4.enums.Location;
 
 public class HemulMessages extends Message implements HemulActions{
 

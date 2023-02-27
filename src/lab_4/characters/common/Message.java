@@ -1,4 +1,4 @@
-package lab_4;
+package lab_4.characters.common;
 
 public abstract class Message {
 

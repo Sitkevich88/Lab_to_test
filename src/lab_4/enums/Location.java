@@ -1,4 +1,4 @@
-package lab_4;
+package lab_4.enums;
 
 public enum Location{
     GLADE_OF_HATIFNATTS,

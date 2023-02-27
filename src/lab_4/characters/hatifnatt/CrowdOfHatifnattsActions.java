@@ -1,4 +1,8 @@
-package lab_4;
+package lab_4.characters.hatifnatt;
+
+import lab_4.characters.hemul.Hemul;
+import lab_4.enums.Location;
+import lab_4.exceptions.ImpossibleNumberException;
 
 public interface CrowdOfHatifnattsActions extends HatifnattActions {
     void swarm();
